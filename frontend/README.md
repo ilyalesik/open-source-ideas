@@ -1,3 +1,3 @@
 # Frontend open source projects ideas
 
-- [Typed CSS-in_JS](/typed-css-in-js)
+- [Typed CSS-in-JS](/frontend/typed-css-in-js)
