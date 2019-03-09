@@ -2,7 +2,7 @@
 
 CSS-in-JS solution with good typing support and zero-runtime.
 
-### Modifiers
+## Modifiers
 
 ```javascript
 // @flow
@@ -50,7 +50,7 @@ Non declared specifier will throw typing error:
 }
 ```
 
-### Dynamic props
+## Dynamic props
 ```javascript
 // @flow
 import React from "react";
@@ -82,3 +82,20 @@ const StyledComponent = styled.div`
 }
 ```
 TODO: var binded to component, that used styled component.
+
+## Referring
+
+```javascript
+const OtherComponent = styled.div`
+    ${StyledComponent.active}:hover & {
+        color: white;
+    }
+`; 
+```
+
+#### Output code
+```css
+.StyledComponent--active-45df53:hover .OtherComponent-rt56pl6 {
+    color: white;
+}
+```
